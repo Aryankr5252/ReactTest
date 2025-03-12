@@ -4,7 +4,7 @@ const Card = ({ image, info, price, name }) => {
     const [truee, setTruee] = useState(false);
     const description = truee ? info : `${info.substring(0, 200)}...`;
     return (
-        <div className="card w-3/12 ">
+        <div className="card w-3/12 shadow shadow-slate-500 shadow-xl p-4">
             <img src={image} className="w-full h-[260px] overflow-hidden"></img>
             <div>
                 <div className="tour-details">
